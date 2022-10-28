@@ -4,6 +4,7 @@ module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
+    "./node_modules/flowbite-react/**/*.js",
   ],
   // purge: {
   //   enabled: true,
@@ -28,6 +29,9 @@ module.exports = {
     typography: ['dark'],
   },
   plugins: [
-    require('@tailwindcss/typography')
+    require('@tailwindcss/typography'),
+    require("daisyui"),
+    require("flowbite/plugin")
+
   ],
 }

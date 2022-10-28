@@ -9,3 +9,92 @@
 body{
     background-color: aliceblue;
 }
+img {
+    pointer-events: none;
+}
+.hide-scroll-bar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .hide-scroll-bar::-webkit-scrollbar {
+    display: none;
+  }
+  .scroll-parent {
+    position: relative;
+    width: 35vw;
+    height: 10rem;
+    overflow-x: hidden;
+  }
+  
+
+  .scroll-element {
+    
+    position: absolute;
+    left: 0%;
+    top: 45%;
+    animation: primary 5s linear infinite;
+  }
+  
+  
+  .primary {
+    animation: primary 11s linear infinite;
+  }
+  
+  
+  
+  @keyframes primary {
+    from {
+      left: 100%;
+    }
+    to {
+      left: -360%;
+    }
+  }
+  
+  .customScroll::-webkit-scrollbar {
+    width: 8px;               /* width of the entire scrollbar */
+  }
+  
+  .customScroll::-webkit-scrollbar-track {
+    background: transparent;        /* color of the tracking area */
+  }
+  
+  .customScroll::-webkit-scrollbar-thumb {
+    background-color: rgb(96, 104, 112);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+  }
+  
+ .blurryBg{
+  background-color: rgba(255, 255, 255, 0.185);
+  backdrop-filter: blur(5px) !important;
+ }
+ body {
+	/* background: linear-gradient(-45deg, #47a7c2, #228fe3, #47bfe0, #3192e7); */
+	background: repeating-linear-gradient(
+    45deg,
+    #039BE5 0px,
+    #039BE5 20px,
+    #90CAF9 20px,
+    #90CAF9 40px
+  );
+  background-size: 400% 400%;
+	/* animation: gradient 15s ease infinite; */
+  padding: 0;
+  margin: 0 !important;
+  height: 110vh;
+}
+html{
+
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
