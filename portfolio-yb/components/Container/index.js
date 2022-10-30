@@ -83,9 +83,10 @@ function index(props) {
   return (
     <div className="mb-5">
       {props.navigate == "about" && (
+        <>
         <div 
         
-        className=" pt-6 p-4 grid place-content-center grid-cols-auto-fit grid-row-auto-fit auto-rows-max auto-cols-max grid-flow-rows grid-flow-col w-full h-full gap-3">
+        className="max-lg:hidden  pt-6 p-4 grid place-content-center grid-cols-auto-fit grid-row-auto-fit auto-rows-max auto-cols-max grid-flow-rows grid-flow-col w-full h-full gap-3">
           <div className="p-4 row-span-2 col-span-2 w-full blurryBg  drop-shadow-xl rounded-2xl dark:bg-slate-700">
             <Image
               src={meMoji}
@@ -93,18 +94,17 @@ function index(props) {
               height={165}
               className="rounded-2xl"
             />
-            <h4 className="font-medium text-white">Hey there,</h4>
-            <h3 className="font-semibold text-white">
+            <h3 className="font-semibold text-slate-800">
               My name is{" "}
-              <span className="bg-gradient-to-r from-slate-700 to-slate-500 text-transparent bg-clip-text">
+              <span className="bg-gradient-to-r from-black to-slate-500 text-transparent bg-clip-text">
                 Youssef Baamel
               </span>{" "}
               & I'm a
             </h3>
-            <h1 className="text-4xl bg-gradient-to-r from-slate-700 to-slate-500 text-transparent bg-clip-text">
+            <h1 className="text-4xl bg-gradient-to-r from-black to-slate-500 text-transparent bg-clip-text">
               <b>Front End Engineer</b>
             </h1>
-            <p className="w-80 text-lg font-medium text-white">
+            <p className="w-80 text-lg font-medium text-slate-800">
               Since my childhood i was always enthusiastic about technology and
               curious about how we can make software that people use just from a
               device.{" "}
@@ -146,59 +146,59 @@ function index(props) {
               />
             </div>
           </div>
-          <div className="row-span-1 col-span-1 blurryBg rounded-2xl p-4 pl-6">
-            <p className="mb-2 flex w-full justify-center text-3xl font-semibold bg-gradient-to-r from-slate-700 to-slate-500 text-transparent bg-clip-text">
+          <div className="row-span-1 col-span-2 blurryBg rounded-2xl p-3 pl-6">
+            <p className="mb-2 flex w-full justify-center text-3xl font-semibold bg-gradient-to-r from-black to-slate-500 text-transparent bg-clip-text">
                 {" "}
                 Skills{" "}
               </p>
               
-              <div className=" translate ease-in delay-100 grid grid-rows-4 grid-flow-col gap-3">
+              <div className=" translate ease-in delay-100 grid grid-rows-4 grid-flow-col gap-0">
                 {" "}
-                <div>
+                <div className="text-center" >
                   <Image src={javascriptOrigine} width={40} height={40} />
                 </div>{" "}
-                <div>
+                <div className="text-center">
                   {" "}
                   <Image src={react} width={40} height={40} />{" "}
                 </div>{" "}
-                <div>
+                <div className="text-center">
                   {" "}
                   <Image src={typescript} width={40} height={40} />{" "}
                 </div>{" "}
-                <div>
+                <div className="text-center">
                   {" "}
                   <Image src={nodejs} width={40} height={40} />{" "}
                 </div>{" "}
-                <div>
+                <div className="text-center">
                   {" "}
                   <Image src={nextjs} width={40} height={40} />{" "}
                 </div>{" "}
-                <div>
+                <div className="text-center">
                   {" "}
                   <Image src={redux} width={40} height={40} />{" "}
                 </div>{" "}
-                <div>
+                <div className="text-center">
                   {" "}
                   <Image src={vuejs} width={40} height={40} />{" "}
                 </div>{" "}
-                <div>
+                <div className="text-center">
                   {" "}
                   <Image src={sass} width={40} height={40} />{" "}
                 </div>{" "}
-                <div>
+                <div className="text-center">
                   {" "}
                   <Image src={nuxtjs} width={40} height={40} />{" "}
                 </div>
-                <div>
+                <div className="text-center">
                   {" "}
                   <Image src={tailwind} width={40} height={40} />{" "}
                 </div>{" "}
                 
-                <div>
+                <div className="text-center">
                   {" "}
                   <Image src={git} width={40} height={40} />{" "}
                 </div>{" "}
-                <div>
+                <div className="text-center">
                   {" "}
                   <Image src={jquery} width={40} height={40} />{" "}
                 </div>{" "}
@@ -206,15 +206,19 @@ function index(props) {
                 
               </div>
           </div>
-          <div className=" row-span-1 col-span-1 h-">
+          <div 
+          style={{
+            width:"230px" 
+          }}  
+          className=" row-span-1 col-span-1 ">
             <div className="relative p-4 col-span-1 row-span-1 w-full h-full blurryBg drop-shadow-xl rounded-2xl">
-              <p className="text-3xl font-semibold bg-gradient-to-r from-slate-700 to-slate-500 text-transparent bg-clip-text">
+              <p className="text-3xl font-semibold bg-gradient-to-r from-black to-slate-500 text-transparent bg-clip-text">
                 Hobbies
               </p>
-              <ul className="mt-4">
+              <ul className="mt-4 absolute   z-40">
                 <li>
                   <p
-                    className="text-2xl font-semibold cursor-pointer text-white hover:text-slate-700 focus:text-slate-700"
+                    className="whitespace-nowrap text-2xl font-semibold cursor-pointer text-slate-700 hover:text-white "
                     onClick={() => displayHobby(0)}
                   >
                     Horse Riding
@@ -222,7 +226,7 @@ function index(props) {
                 </li>
                 <li>
                   <p
-                    className="text-2xl font-semibold cursor-pointer text-white hover:text-slate-700"
+                    className="whitespace-nowrap text-2xl font-semibold cursor-pointer text-slate-700 hover:text-white"
                     onClick={() => displayHobby(1)}
                   >
                     Running
@@ -230,57 +234,64 @@ function index(props) {
                 </li>
                 <li>
                   <p
-                    className="text-2xl font-semibold cursor-pointer text-white hover:text-slate-700"
+                    className="whitespace-nowrap text-2xl font-semibold cursor-pointer text-slate-700 hover:text-white"
                     onClick={() => displayHobby(2)}
                   >
                     Surfing
                   </p>
                 </li>
               </ul>
-              <button className="pt-1 pl-1  absolute z-40  bg-transparent w-auto translate ease-in delay-100 rounded-full bottom-1 right-1">
+              <button 
+                style={{
+                  position:"absolute",
+                  right:"-12px",
+                  bottom:"-20px"
+
+                }}
+              className="pt-1 pl-1  absolute z-0  bg-transparent w-auto translate ease-in delay-100 rounded-full bottom-0 right-0">
                 <Image
                   src={displayedHobby}
-                  width={150}
-                  height={150}
+                  width={170}
+                  height={170}
                   className="translate ease-in delay-100"
                 />
               </button>
             </div>
           </div>
           
-          <div className=" row-span-1 col-span-1 w-56">
+          <div className=" row-span-2 col-span-auto w-56">
             <div
             style={{
-              height: "300px",
+              height: "565px",
     overflowY: "scroll"}}
             className="customScroll relative p-4 col-span-1 row-span-1 w-full h-full blurryBg drop-shadow-xl rounded-2xl">
-            <p className="pb-4 text-3xl font-semibold bg-gradient-to-r from-slate-700 to-slate-500 text-transparent bg-clip-text">
+            <p className="pb-4 text-3xl font-semibold bg-gradient-to-r from-black to-slate-500 text-transparent bg-clip-text">
               Experience
             </p> 
-<ol class="relative border-l border-slate-700 dark:border-gray-200">                  
-    <li class="mb-10 ml-4">
-        <div class="absolute w-3 h-3  rounded-full mt-1.5 -left-1.5 border border-white   bg-gray-700 dark:border-gray-900 dark:bg-gray-200"></div>
-        <time class="mb-1 mt-0 text-base font-medium leading-none text-white dark:text-gray-500">February 2022</time>
-        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Application UI code in Tailwind CSS</h3>
-        <p class="mb-4 text-base font-medium text-white dark:text-gray-400">Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce &amp; Marketing pages.</p>
+<ol className="relative border-l border-slate-700 dark:border-gray-200">                  
+    <li className="mb-10 ml-4">
+        <div className="absolute w-3 h-3  rounded-full mt-1.5 -left-1.5 border border-white   bg-gray-700 dark:border-gray-900 dark:bg-gray-200"></div>
+        <time className="mb-1 mt-0 text-base font-medium leading-none text-slate-700 dark:text-gray-500">February 2022</time>
+        <h3 className="text-lg font-semibold text-gray-900 dark:text-slate-700">Application UI code in Tailwind CSS</h3>
+        <p className="mb-4 text-base font-medium text-slate-700 dark:text-gray-400">Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce &amp; Marketing pages.</p>
     </li>
-    <li class="mb-10 ml-4">
-    <div class="absolute w-3 h-3  rounded-full mt-1.5 -left-1.5 border border-white   bg-gray-700 dark:border-gray-900 dark:bg-gray-200"></div>
-        <time class="mb-1 mt-0 text-base font-medium leading-none text-white dark:text-gray-500">February 2022</time>
-        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Application UI code in Tailwind CSS</h3>
-        <p class="mb-4 text-base font-medium text-white dark:text-gray-400">Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce &amp; Marketing pages.</p>
+    <li className="mb-10 ml-4">
+    <div className="absolute w-3 h-3  rounded-full mt-1.5 -left-1.5 border border-white   bg-gray-700 dark:border-gray-900 dark:bg-gray-200"></div>
+        <time className="mb-1 mt-0 text-base font-medium leading-none text-slate-700 dark:text-gray-500">February 2022</time>
+        <h3 className="text-lg font-semibold text-gray-900 dark:text-slate-700">Application UI code in Tailwind CSS</h3>
+        <p className="mb-4 text-base font-medium text-slate-700 dark:text-gray-400">Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce &amp; Marketing pages.</p>
     </li>
-    <li class="mb-10 ml-4">
-    <div class="absolute w-3 h-3  rounded-full mt-1.5 -left-1.5 border border-white   bg-gray-700 dark:border-gray-900 dark:bg-gray-200"></div>
-        <time class="mb-1 mt-0 text-base font-medium leading-none text-white dark:text-gray-500">February 2022</time>
-        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Application UI code in Tailwind CSS</h3>
-        <p class="mb-4 text-base font-medium text-white dark:text-gray-400">Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce &amp; Marketing pages.</p>
+    <li className="mb-10 ml-4">
+    <div className="absolute w-3 h-3  rounded-full mt-1.5 -left-1.5 border border-white   bg-gray-700 dark:border-gray-900 dark:bg-gray-200"></div>
+        <time className="mb-1 mt-0 text-base font-medium leading-none text-slate-700 dark:text-gray-500">February 2022</time>
+        <h3 className="text-lg font-semibold text-gray-900 dark:text-slate-700">Application UI code in Tailwind CSS</h3>
+        <p className="mb-4 text-base font-medium text-slate-700 dark:text-gray-400">Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce &amp; Marketing pages.</p>
     </li>
-    <li class="ml-4">
-    <div class="absolute w-3 h-3  rounded-full mt-1.5 -left-1.5 border border-white   bg-gray-700 dark:border-gray-900 dark:bg-gray-200"></div>
-        <time class="mb-1 mt-0 text-base font-medium leading-none text-white dark:text-gray-500">February 2022</time>
-        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Application UI code in Tailwind CSS</h3>
-        <p class="mb-4 text-base font-medium text-white dark:text-gray-400">Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce &amp; Marketing pages.</p>
+    <li className="ml-4">
+    <div className="absolute w-3 h-3  rounded-full mt-1.5 -left-1.5 border border-white   bg-gray-700 dark:border-gray-900 dark:bg-gray-200"></div>
+        <time className="mb-1 mt-0 text-base font-medium leading-none text-slate-700 dark:text-gray-500">February 2022</time>
+        <h3 className="text-lg font-semibold text-gray-900 dark:text-slate-700">Application UI code in Tailwind CSS</h3>
+        <p className="mb-4 text-base font-medium text-slate-700 dark:text-gray-400">Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce &amp; Marketing pages.</p>
     </li>
 </ol>
 
@@ -289,7 +300,7 @@ function index(props) {
   
           
           {/* <div className="p-5 row-span-auto col-span-auto bg-white w-60  rounded-2xl shadow-lg">
-            <p className="pb-4 text-3xl font-semibold bg-gradient-to-r from-slate-700 to-slate-500 text-transparent bg-clip-text">
+            <p className="pb-4 text-3xl font-semibold bg-gradient-to-r from-black to-slate-500 text-transparent bg-clip-text">
               Tools
             </p>
             <div className=" grid grid-cols-3 gap-4">
@@ -299,6 +310,470 @@ function index(props) {
             </div>
           </div> */}
         </div>
+        <div 
+        
+        className="lg:hidden max-sm:hidden  pt-6 p-4 grid place-content-center grid-cols-auto-fit grid-row-auto-fit auto-rows-max  w-full h-full gap-3">
+          <div className="p-4 text-center row-span-2 col-span-2 w-full blurryBg  drop-shadow-xl rounded-2xl dark:bg-slate-700">
+            <Image
+              src={meMoji}
+              width={150}
+              height={165}
+              className="rounded-2xl"
+            />
+            <h3 className="font-semibold text-slate-800">
+              My name is{" "}
+              <span className="bg-gradient-to-r from-black to-slate-500 text-transparent bg-clip-text">
+                Youssef Baamel
+              </span>{" "}
+              & I'm a
+            </h3>
+            <h1 className="text-4xl bg-gradient-to-r from-black to-slate-500 text-transparent bg-clip-text">
+              <b>Front End Engineer</b>
+            </h1>
+            <p className="mt-2 w-96 text-lg font-medium text-slate-800 text-left">
+              Since my childhood i was always enthusiastic about technology and
+              curious about how we can make software that people use just from a
+              device.{" "}
+              <span className="underline decoration-slate-500">4 years</span>{" "}
+              later, when i first discovered programming i did not stop learning
+              and exploring the field. and here i am a Front End Engineer.
+            </p>
+          </div>
+          <div className="row-span-1 col-span-1">
+            <div className="relative col-span-1 row-span-1 w-64 h-64 bg-white drop-shadow-xl rounded-2xl">
+              <button
+                className="pt-1 pr-1 transition ease-in delay-100 hover:ring-2 ring-transparent ring-offset-4 ring-offset-orange-100 absolute z-40 bg-transparent w-10 rounded-full bottom-2 left-2 "
+                onClick={backSlide}
+              >
+                <Image
+                  src={arrowLeft}
+                  width={30}
+                  height={30}
+                  className=" rounded-2xl"
+                />
+              </button>
+              <button
+                className="pt-1 pl-1 transition ease-in delay-100 hover:ring-2 ring-transparent ring-offset-4 ring-offset-orange-100 absolute z-40  bg-transparent w-10 rounded-full bottom-2 right-2"
+                onClick={nextSlide}
+              >
+                <Image
+                  src={arrowRight}
+                  width={30}
+                  height={30}
+                  className=" rounded-2xl"
+                />
+              </button>
+              
+              <Image
+                src={displayedSlide}
+                width={260}
+                height={260}
+                className="rounded-2xl"
+              />
+            </div>
+          </div>
+          <div 
+          style={{
+            width:"230px" 
+          }}  
+          className=" row-span-1 col-span-1 ">
+            <div className="relative p-4 col-span-1 row-span-1 w-full h-full blurryBg drop-shadow-xl rounded-2xl">
+              <p className="text-3xl font-semibold bg-gradient-to-r from-black to-slate-500 text-transparent bg-clip-text">
+                Hobbies
+              </p>
+              <ul className="mt-4 absolute   z-40">
+                <li>
+                  <p
+                    className="whitespace-nowrap text-2xl font-semibold cursor-pointer text-slate-700 hover:text-white "
+                    onClick={() => displayHobby(0)}
+                  >
+                    Horse Riding
+                  </p>
+                </li>
+                <li>
+                  <p
+                    className="whitespace-nowrap text-2xl font-semibold cursor-pointer text-slate-700 hover:text-white"
+                    onClick={() => displayHobby(1)}
+                  >
+                    Running
+                  </p>
+                </li>
+                <li>
+                  <p
+                    className="whitespace-nowrap text-2xl font-semibold cursor-pointer text-slate-700 hover:text-white"
+                    onClick={() => displayHobby(2)}
+                  >
+                    Surfing
+                  </p>
+                </li>
+              </ul>
+              <button 
+                style={{
+                  position:"absolute",
+                  right:"-12px",
+                  bottom:"-20px"
+
+                }}
+              className="pt-1 pl-1  absolute z-0  bg-transparent w-auto translate ease-in delay-100 rounded-full bottom-0 right-0">
+                <Image
+                  src={displayedHobby}
+                  width={170}
+                  height={170}
+                  className="translate ease-in delay-100"
+                />
+              </button>
+            </div>
+          </div>
+          <div className="row-span-1 col-span-2 blurryBg rounded-2xl p-3 pl-6">
+            <p className="mb-2 flex w-full justify-center text-3xl font-semibold bg-gradient-to-r from-black to-slate-500 text-transparent bg-clip-text">
+                {" "}
+                Skills{" "}
+              </p>
+              
+              <div className=" translate ease-in delay-100 grid grid-rows-4 grid-flow-col gap-0">
+                {" "}
+                <div className="text-center" >
+                  <Image src={javascriptOrigine} width={40} height={40} />
+                </div>{" "}
+                <div className="text-center">
+                  {" "}
+                  <Image src={react} width={40} height={40} />{" "}
+                </div>{" "}
+                <div className="text-center">
+                  {" "}
+                  <Image src={typescript} width={40} height={40} />{" "}
+                </div>{" "}
+                <div className="text-center">
+                  {" "}
+                  <Image src={nodejs} width={40} height={40} />{" "}
+                </div>{" "}
+                <div className="text-center">
+                  {" "}
+                  <Image src={nextjs} width={40} height={40} />{" "}
+                </div>{" "}
+                <div className="text-center">
+                  {" "}
+                  <Image src={redux} width={40} height={40} />{" "}
+                </div>{" "}
+                <div className="text-center">
+                  {" "}
+                  <Image src={vuejs} width={40} height={40} />{" "}
+                </div>{" "}
+                <div className="text-center">
+                  {" "}
+                  <Image src={sass} width={40} height={40} />{" "}
+                </div>{" "}
+                <div className="text-center">
+                  {" "}
+                  <Image src={nuxtjs} width={40} height={40} />{" "}
+                </div>
+                <div className="text-center">
+                  {" "}
+                  <Image src={tailwind} width={40} height={40} />{" "}
+                </div>{" "}
+                
+                <div className="text-center">
+                  {" "}
+                  <Image src={git} width={40} height={40} />{" "}
+                </div>{" "}
+                <div className="text-center">
+                  {" "}
+                  <Image src={jquery} width={40} height={40} />{" "}
+                </div>{" "}
+                {" "}
+                
+              </div>
+          </div>
+          
+          
+          <div 
+          style={{
+            width:"497px !important" 
+          }}
+          className=" row-span-2 col-span-2 ">
+            <div
+            style={{
+              height: "465px",
+    overflowY: "scroll"}}
+            className="customScroll relative p-4 col-span-1 row-span-1 w-full h-full blurryBg drop-shadow-xl rounded-2xl">
+            <p className="pb-4 text-3xl font-semibold bg-gradient-to-r from-black to-slate-500 text-transparent bg-clip-text">
+              Experience
+            </p> 
+<ol className="relative border-l border-slate-700 dark:border-gray-200">                  
+    <li className="mb-10 ml-4">
+        <div className="absolute w-3 h-3  rounded-full mt-1.5 -left-1.5 border border-white   bg-gray-700 dark:border-gray-900 dark:bg-gray-200"></div>
+        <time className="mb-1 mt-0 text-base font-medium leading-none text-slate-700 dark:text-gray-500">February 2022</time>
+        <h3 className="text-lg font-semibold text-gray-900 dark:text-slate-700">Application UI code in Tailwind CSS</h3>
+        <p className="mb-4 text-base font-medium text-slate-700 dark:text-gray-400">Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce &amp; Marketing pages.</p>
+    </li>
+    <li className="mb-10 ml-4">
+    <div className="absolute w-3 h-3  rounded-full mt-1.5 -left-1.5 border border-white   bg-gray-700 dark:border-gray-900 dark:bg-gray-200"></div>
+        <time className="mb-1 mt-0 text-base font-medium leading-none text-slate-700 dark:text-gray-500">February 2022</time>
+        <h3 className="text-lg font-semibold text-gray-900 dark:text-slate-700">Application UI code in Tailwind CSS</h3>
+        <p className="mb-4 text-base font-medium text-slate-700 dark:text-gray-400">Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce &amp; Marketing pages.</p>
+    </li>
+    <li className="mb-10 ml-4">
+    <div className="absolute w-3 h-3  rounded-full mt-1.5 -left-1.5 border border-white   bg-gray-700 dark:border-gray-900 dark:bg-gray-200"></div>
+        <time className="mb-1 mt-0 text-base font-medium leading-none text-slate-700 dark:text-gray-500">February 2022</time>
+        <h3 className="text-lg font-semibold text-gray-900 dark:text-slate-700">Application UI code in Tailwind CSS</h3>
+        <p className="mb-4 text-base font-medium text-slate-700 dark:text-gray-400">Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce &amp; Marketing pages.</p>
+    </li>
+    <li className="ml-4">
+    <div className="absolute w-3 h-3  rounded-full mt-1.5 -left-1.5 border border-white   bg-gray-700 dark:border-gray-900 dark:bg-gray-200"></div>
+        <time className="mb-1 mt-0 text-base font-medium leading-none text-slate-700 dark:text-gray-500">February 2022</time>
+        <h3 className="text-lg font-semibold text-gray-900 dark:text-slate-700">Application UI code in Tailwind CSS</h3>
+        <p className="mb-4 text-base font-medium text-slate-700 dark:text-gray-400">Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce &amp; Marketing pages.</p>
+    </li>
+</ol>
+
+            </div>
+          </div>
+  
+          
+          {/* <div className="p-5 row-span-auto col-span-auto bg-white w-60  rounded-2xl shadow-lg">
+            <p className="pb-4 text-3xl font-semibold bg-gradient-to-r from-black to-slate-500 text-transparent bg-clip-text">
+              Tools
+            </p>
+            <div className=" grid grid-cols-3 gap-4">
+              <Image src={vscode} width={50} height={50} />
+              <Image src={docker} width={60} height={50} />
+              <Image src={npm} width={50} height={50} />
+            </div>
+          </div> */}
+        </div>
+        <div 
+        
+        className="sm:hidden  pt-6 p-4 grid place-content-center grid-cols-auto-fit grid-row-auto-fit auto-rows-max  w-full h-full gap-3">
+          <div className="p-4 text-center row-span-2 col-span-2 w-full blurryBg  drop-shadow-xl rounded-2xl dark:bg-slate-700">
+            <Image
+              src={meMoji}
+              width={150}
+              height={165}
+              className="rounded-2xl"
+            />
+            <h3 className="font-semibold text-slate-800">
+              My name is{" "}
+              <span className="bg-gradient-to-r from-black to-slate-500 text-transparent bg-clip-text">
+                Youssef Baamel
+              </span>{" "}
+              & I'm a
+            </h3>
+            <h1 className="text-4xl bg-gradient-to-r from-black to-slate-500 text-transparent bg-clip-text">
+              <b>Front End Engineer</b>
+            </h1>
+            <p className="mt-2 w-96 text-lg font-medium text-slate-800 text-left">
+              Since my childhood i was always enthusiastic about technology and
+              curious about how we can make software that people use just from a
+              device.{" "}
+              <span className="underline decoration-slate-500">4 years</span>{" "}
+              later, when i first discovered programming i did not stop learning
+              and exploring the field. and here i am a Front End Engineer.
+            </p>
+          </div>
+          <div className="row-span-1 col-span-1">
+            <div className="relative col-span-1 row-span-1 w-64 h-64 bg-white drop-shadow-xl rounded-2xl">
+              <button
+                className="pt-1 pr-1 transition ease-in delay-100 hover:ring-2 ring-transparent ring-offset-4 ring-offset-orange-100 absolute z-40 bg-transparent w-10 rounded-full bottom-2 left-2 "
+                onClick={backSlide}
+              >
+                <Image
+                  src={arrowLeft}
+                  width={30}
+                  height={30}
+                  className=" rounded-2xl"
+                />
+              </button>
+              <button
+                className="pt-1 pl-1 transition ease-in delay-100 hover:ring-2 ring-transparent ring-offset-4 ring-offset-orange-100 absolute z-40  bg-transparent w-10 rounded-full bottom-2 right-2"
+                onClick={nextSlide}
+              >
+                <Image
+                  src={arrowRight}
+                  width={30}
+                  height={30}
+                  className=" rounded-2xl"
+                />
+              </button>
+              
+              <Image
+                src={displayedSlide}
+                width={260}
+                height={260}
+                className="rounded-2xl"
+              />
+            </div>
+          </div>
+          <div 
+          style={{
+            width:"230px" 
+          }}  
+          className=" row-span-1 col-span-1 ">
+            <div className="relative p-4 col-span-1 row-span-1 w-full h-full blurryBg drop-shadow-xl rounded-2xl">
+              <p className="text-3xl font-semibold bg-gradient-to-r from-black to-slate-500 text-transparent bg-clip-text">
+                Hobbies
+              </p>
+              <ul className="mt-4 absolute   z-40">
+                <li>
+                  <p
+                    className="whitespace-nowrap text-2xl font-semibold cursor-pointer text-slate-700 hover:text-white "
+                    onClick={() => displayHobby(0)}
+                  >
+                    Horse Riding
+                  </p>
+                </li>
+                <li>
+                  <p
+                    className="whitespace-nowrap text-2xl font-semibold cursor-pointer text-slate-700 hover:text-white"
+                    onClick={() => displayHobby(1)}
+                  >
+                    Running
+                  </p>
+                </li>
+                <li>
+                  <p
+                    className="whitespace-nowrap text-2xl font-semibold cursor-pointer text-slate-700 hover:text-white"
+                    onClick={() => displayHobby(2)}
+                  >
+                    Surfing
+                  </p>
+                </li>
+              </ul>
+              <button 
+                style={{
+                  position:"absolute",
+                  right:"-12px",
+                  bottom:"-20px"
+
+                }}
+              className="pt-1 pl-1  absolute z-0  bg-transparent w-auto translate ease-in delay-100 rounded-full bottom-0 right-0">
+                <Image
+                  src={displayedHobby}
+                  width={170}
+                  height={170}
+                  className="translate ease-in delay-100"
+                />
+              </button>
+            </div>
+          </div>
+          <div className="row-span-1 col-span-2 blurryBg rounded-2xl p-3 pl-6">
+            <p className="mb-2 flex w-full justify-center text-3xl font-semibold bg-gradient-to-r from-black to-slate-500 text-transparent bg-clip-text">
+                {" "}
+                Skills{" "}
+              </p>
+              
+              <div className=" translate ease-in delay-100 grid grid-rows-4 grid-flow-col gap-0">
+                {" "}
+                <div className="text-center" >
+                  <Image src={javascriptOrigine} width={40} height={40} />
+                </div>{" "}
+                <div className="text-center">
+                  {" "}
+                  <Image src={react} width={40} height={40} />{" "}
+                </div>{" "}
+                <div className="text-center">
+                  {" "}
+                  <Image src={typescript} width={40} height={40} />{" "}
+                </div>{" "}
+                <div className="text-center">
+                  {" "}
+                  <Image src={nodejs} width={40} height={40} />{" "}
+                </div>{" "}
+                <div className="text-center">
+                  {" "}
+                  <Image src={nextjs} width={40} height={40} />{" "}
+                </div>{" "}
+                <div className="text-center">
+                  {" "}
+                  <Image src={redux} width={40} height={40} />{" "}
+                </div>{" "}
+                <div className="text-center">
+                  {" "}
+                  <Image src={vuejs} width={40} height={40} />{" "}
+                </div>{" "}
+                <div className="text-center">
+                  {" "}
+                  <Image src={sass} width={40} height={40} />{" "}
+                </div>{" "}
+                <div className="text-center">
+                  {" "}
+                  <Image src={nuxtjs} width={40} height={40} />{" "}
+                </div>
+                <div className="text-center">
+                  {" "}
+                  <Image src={tailwind} width={40} height={40} />{" "}
+                </div>{" "}
+                
+                <div className="text-center">
+                  {" "}
+                  <Image src={git} width={40} height={40} />{" "}
+                </div>{" "}
+                <div className="text-center">
+                  {" "}
+                  <Image src={jquery} width={40} height={40} />{" "}
+                </div>{" "}
+                {" "}
+                
+              </div>
+          </div>
+          
+          
+          <div 
+          style={{
+            width:"497px !important" 
+          }}
+          className=" row-span-2 col-span-2 ">
+            <div
+            style={{
+              height: "465px",
+    overflowY: "scroll"}}
+            className="customScroll relative p-4 col-span-1 row-span-1 w-full h-full blurryBg drop-shadow-xl rounded-2xl">
+            <p className="pb-4 text-3xl font-semibold bg-gradient-to-r from-black to-slate-500 text-transparent bg-clip-text">
+              Experience
+            </p> 
+<ol className="relative border-l border-slate-700 dark:border-gray-200">                  
+    <li className="mb-10 ml-4">
+        <div className="absolute w-3 h-3  rounded-full mt-1.5 -left-1.5 border border-white   bg-gray-700 dark:border-gray-900 dark:bg-gray-200"></div>
+        <time className="mb-1 mt-0 text-base font-medium leading-none text-slate-700 dark:text-gray-500">February 2022</time>
+        <h3 className="text-lg font-semibold text-gray-900 dark:text-slate-700">Application UI code in Tailwind CSS</h3>
+        <p className="mb-4 text-base font-medium text-slate-700 dark:text-gray-400">Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce &amp; Marketing pages.</p>
+    </li>
+    <li className="mb-10 ml-4">
+    <div className="absolute w-3 h-3  rounded-full mt-1.5 -left-1.5 border border-white   bg-gray-700 dark:border-gray-900 dark:bg-gray-200"></div>
+        <time className="mb-1 mt-0 text-base font-medium leading-none text-slate-700 dark:text-gray-500">February 2022</time>
+        <h3 className="text-lg font-semibold text-gray-900 dark:text-slate-700">Application UI code in Tailwind CSS</h3>
+        <p className="mb-4 text-base font-medium text-slate-700 dark:text-gray-400">Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce &amp; Marketing pages.</p>
+    </li>
+    <li className="mb-10 ml-4">
+    <div className="absolute w-3 h-3  rounded-full mt-1.5 -left-1.5 border border-white   bg-gray-700 dark:border-gray-900 dark:bg-gray-200"></div>
+        <time className="mb-1 mt-0 text-base font-medium leading-none text-slate-700 dark:text-gray-500">February 2022</time>
+        <h3 className="text-lg font-semibold text-gray-900 dark:text-slate-700">Application UI code in Tailwind CSS</h3>
+        <p className="mb-4 text-base font-medium text-slate-700 dark:text-gray-400">Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce &amp; Marketing pages.</p>
+    </li>
+    <li className="ml-4">
+    <div className="absolute w-3 h-3  rounded-full mt-1.5 -left-1.5 border border-white   bg-gray-700 dark:border-gray-900 dark:bg-gray-200"></div>
+        <time className="mb-1 mt-0 text-base font-medium leading-none text-slate-700 dark:text-gray-500">February 2022</time>
+        <h3 className="text-lg font-semibold text-gray-900 dark:text-slate-700">Application UI code in Tailwind CSS</h3>
+        <p className="mb-4 text-base font-medium text-slate-700 dark:text-gray-400">Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce &amp; Marketing pages.</p>
+    </li>
+</ol>
+
+            </div>
+          </div>
+  
+          
+          {/* <div className="p-5 row-span-auto col-span-auto bg-white w-60  rounded-2xl shadow-lg">
+            <p className="pb-4 text-3xl font-semibold bg-gradient-to-r from-black to-slate-500 text-transparent bg-clip-text">
+              Tools
+            </p>
+            <div className=" grid grid-cols-3 gap-4">
+              <Image src={vscode} width={50} height={50} />
+              <Image src={docker} width={60} height={50} />
+              <Image src={npm} width={50} height={50} />
+            </div>
+          </div> */}
+        </div>
+        </>
+        
       )}
       {props.navigate == "projects" && (
         <>
@@ -308,12 +783,12 @@ function index(props) {
             className="row-span-2 blurryBg  w-full rounded-2xl">
               <div className="p-4">
                 <div className="pb-3">
-                  <p className=" text-xl text-white">Project</p>
-                  <p className=" text-2xl font-semibold bg-gradient-to-r from-white to-white text-transparent bg-clip-text">
+                  <p className=" text-xl text-slate-700">Project</p>
+                  <p className=" text-2xl font-semibold bg-gradient-to-r from-black to-slate-400 text-transparent bg-clip-text">
                     Hulu Clone
                   </p>
                 </div>
-                <p className=" text-xl text-white mb-1">
+                <p className=" text-xl text-slate-700 mb-1">
                   Technologies used
                 </p>
                 <div className="flex justify-evenly">
@@ -331,22 +806,22 @@ function index(props) {
                   />
                 </div>
                 <div className="mt-2">
-                  <button className="bg-white hover:scale-105 transition ease-in w-full flex shadow-lg justify-center  p-1 rounded-full">
-                    <p className="text-lg text-slate-800">View Project</p>
+                  <button className="bg-black hover:scale-105 transition ease-in w-full flex shadow-lg justify-center  p-1 rounded-full">
+                    <p className="text-lg text-white bg-black">View Project</p>
                     <div className="ml-2 mt-1">
-                      <Image src={external} width={17} height={17} />
+                      <Image src={external} width={21} height={21} />
                     </div>
                   </button>
-                  <button className="bg-white mt-2 hover:scale-105 transition ease-in w-full flex justify-center shadow-lg p-1 rounded-full">
-                    <p className="text-lg text-slate-800">Check on Github</p>
+                  <button className="bg-black mt-2 hover:scale-105 transition ease-in w-full flex justify-center shadow-lg p-1 rounded-full">
+                    <p className="text-lg text-white bg-black">Check on Github</p>
                     <div className="ml-2 mt-1">
-                      <Image src={githubblack} width={17} height={17} />
+                      <Image src={githubIcon} width={17} height={17} />
                     </div>
                   </button>
                 </div>
               </div>
             </div>
-            <div className="row-span-1   blurryBg w-full rounded-2xl">
+            <div className="row-span-1 col-span-1   blurryBg w-full rounded-2xl">
               <div className="p-4 flex">
                 
                 <div className="pb-3 mr-5"
@@ -354,28 +829,11 @@ function index(props) {
                     width:"200px !important"
                   }}>
                     
-                  <p className=" text-xl text-white">Project</p>
-                  <p className=" text-2xl mr-2 font-semibold bg-gradient-to-r from-white to-white text-transparent bg-clip-text">
+                  <p className=" text-xl text-slate-700">Project</p>
+                  <p className=" text-2xl mr-2 font-semibold bg-gradient-to-r from-black to-slate-700 text-transparent bg-clip-text">
                   Organization <br></br> Funding  App
                   </p>
-                  <div className="mt-10">
-                  <button className="bg-white  hover:scale-105 transition ease-in w-full flex shadow-lg justify-center  p-2 rounded-full">
-                    <p className="text-lg text-slate-800">View Project</p>
-                    <div className="ml-2 mt-1">
-                      <Image src={external} width={17} height={17} />
-                    </div>
-                  </button>
-                  <button className="bg-white mt-2 hover:scale-105 transition ease-in w-full flex justify-center shadow-lg p-2 rounded-full">
-                    <p className="text-lg text-slate-800">Check on Github</p>
-                    <div className="ml-2 mt-1">
-                      <Image src={githubblack} width={17} height={17} />
-                    </div>
-                  </button>
-                </div>
-                </div>
-                
-                <div>
-                  <p className=" text-xl text-white mb-1">
+                  <p className=" text-xl text-slate-700 mb-1">
                   Technologies used
                 </p>
                 <div className="flex justify-evenly">
@@ -383,11 +841,30 @@ function index(props) {
                   {/* <Image src={vuetify} width={30} height={30} /> */}
                   <Image src={vuejs} width={30} height={30} />
                   <Image src={tailwind} width={30} height={30} />
-                </div><div className="mt-3">
+                </div>
+                  <div className="mt-4">
+                  <button className="bg-black hover:scale-105 transition ease-in w-full flex shadow-lg justify-center  px-8 py-1 rounded-full">
+                    <p className="text-lg text-white bg-black">View Project</p>
+                    <div className="ml-2 mt-1">
+                      <Image src={external} width={21} height={21} />
+                    </div>
+                  </button>
+                  <button className="bg-black mt-2 hover:scale-105 transition ease-in w-full flex justify-center shadow-lg px-8 py-1 rounded-full">
+                    <p className="text-lg text-white bg-black">Check on Github</p>
+                    <div className="ml-2 mt-1">
+                      <Image src={githubIcon} width={17} height={17} />
+                    </div>
+                  </button>
+                </div>
+                </div>
+                
+                <div>
+                  
+                <div className="mt-3">
                   <Image
                     src={np}
-                    width={200}
-                    height={200}
+                    width={220}
+                    height={220}
                     className="rounded-2xl"
                   />
                 </div>
@@ -397,18 +874,71 @@ function index(props) {
                 
               </div>
             </div>
+            {/* <div className="row-span-1 col-span-1   blurryBg w-full rounded-2xl">
+              <div className="p-4 flex">
+                
+                <div className="pb-3 mr-5"
+                  style={{
+                    width:"200px !important"
+                  }}>
+                    
+                  <p className=" text-xl text-slate-700">Project</p>
+                  <p className=" text-2xl mr-2 font-semibold bg-gradient-to-r from-black to-slate-700 text-transparent bg-clip-text">
+                  Organization <br></br> Funding  App
+                  </p>
+                  <p className=" text-xl text-slate-700 mb-1">
+                  Technologies used
+                </p>
+                <div className="flex justify-evenly">
+                  <Image src={javascriptOrigine} width={30} height={30} />
+                  <Image src={vuejs} width={30} height={30} />
+                  <Image src={tailwind} width={30} height={30} />
+                </div>
+                  <div className="mt-4">
+                  <button className="bg-black hover:scale-105 transition ease-in w-full flex shadow-lg justify-center  px-8 py-1 rounded-full">
+                    <p className="text-lg text-white bg-black">View Project</p>
+                    <div className="ml-2 mt-1">
+                      <Image src={external} width={21} height={21} />
+                    </div>
+                  </button>
+                  <button className="bg-black mt-2 hover:scale-105 transition ease-in w-full flex justify-center shadow-lg px-8 py-1 rounded-full">
+                    <p className="text-lg text-white bg-black">Check on Github</p>
+                    <div className="ml-2 mt-1">
+                      <Image src={githubIcon} width={17} height={17} />
+                    </div>
+                  </button>
+                </div>
+                </div>
+                
+                <div>
+                  
+                <div className="mt-3">
+                  <Image
+                    src={np}
+                    width={220}
+                    height={220}
+                    className="rounded-2xl"
+                  />
+                </div>
+                </div>
+                
+                
+                
+              </div>
+            </div> */}
+            
             <div className="row-span-2  blurryBg w-full rounded-2xl">
               <div className="p-4">
                 <div className="pb-3 "
                   style={{
                     width:"200px !important"
                   }}>
-                  <p className=" text-xl text-white">Project</p>
-                  <p className=" text-2xl font-semibold bg-gradient-to-r from-white to-white text-transparent bg-clip-text">
+                  <p className=" text-xl text-slate-700">Project</p>
+                  <p className=" text-2xl font-semibold bg-gradient-to-r from-black to-slate-700 text-transparent bg-clip-text">
                   Newsletter Management <br></br> & Generation
                   </p>
                 </div>
-                <p className=" text-xl text-white mb-1">
+                <p className=" text-xl text-slate-700 mb-1">
                   Technologies used
                 </p>
                 <div className="flex justify-evenly">
@@ -426,16 +956,16 @@ function index(props) {
                   />
                 </div>
                 <div className="mt-2">
-                  <button className="bg-white  hover:scale-105 transition ease-in w-full flex shadow-lg justify-center  p-1 rounded-full">
-                    <p className="text-lg text-slate-800">View Project</p>
+                  <button className="bg-black hover:scale-105 transition ease-in w-full flex shadow-lg justify-center  p-1 rounded-full">
+                    <p className="text-lg text-white bg-black">View Project</p>
                     <div className="ml-2 mt-1">
-                      <Image src={external} width={17} height={17} />
+                      <Image src={external} width={21} height={21} />
                     </div>
                   </button>
-                  <button className="bg-white mt-2 hover:scale-105 transition ease-in w-full flex justify-center shadow-lg p-1 rounded-full">
-                    <p className="text-lg text-slate-800">Check on Github</p>
+                  <button className="bg-black mt-2 hover:scale-105 transition ease-in w-full flex justify-center shadow-lg p-1 rounded-full">
+                    <p className="text-lg text-white bg-black">Check on Github</p>
                     <div className="ml-2 mt-1">
-                      <Image src={githubblack} width={17} height={17} />
+                      <Image src={githubIcon} width={17} height={17} />
                     </div>
                   </button>
                 </div>
