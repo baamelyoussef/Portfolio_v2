@@ -542,9 +542,11 @@ function index(props) {
           </div> */}
         </div>
         <div 
-        
-        className="sm:hidden  pt-6 p-4 grid place-content-center grid-cols-auto-fit grid-row-auto-fit auto-rows-max  w-full h-full gap-3">
-          <div className="p-4 text-center row-span-2 col-span-2 w-full blurryBg  drop-shadow-xl rounded-2xl dark:bg-slate-700">
+        style={{
+          margin: "auto !important" 
+        }}
+        className="sm:hidden p-4 flex flex-col items-center  justify-center justify-items-center  w-full h-full gap-3">
+          <div className="p-4 text-center  w-72 blurryBg  drop-shadow-xl rounded-2xl dark:bg-slate-700">
             <Image
               src={meMoji}
               width={150}
@@ -561,7 +563,7 @@ function index(props) {
             <h1 className="text-4xl bg-gradient-to-r from-black to-slate-500 text-transparent bg-clip-text">
               <b>Front End Engineer</b>
             </h1>
-            <p className="mt-2 w-96 text-lg font-medium text-slate-800 text-left">
+            <p className="mt-2  text-lg font-medium text-slate-800 text-left">
               Since my childhood i was always enthusiastic about technology and
               curious about how we can make software that people use just from a
               device.{" "}
@@ -570,8 +572,8 @@ function index(props) {
               and exploring the field. and here i am a Front End Engineer.
             </p>
           </div>
-          <div className="row-span-1 col-span-1">
-            <div className="relative col-span-1 row-span-1 w-64 h-64 bg-white drop-shadow-xl rounded-2xl">
+          <div className=" row-span-1 col-span-1">
+            <div className="relative col-span-1 row-span-1 w-72 h-64 bg-white drop-shadow-xl rounded-2xl">
               <button
                 className="pt-1 pr-1 transition ease-in delay-100 hover:ring-2 ring-transparent ring-offset-4 ring-offset-orange-100 absolute z-40 bg-transparent w-10 rounded-full bottom-2 left-2 "
                 onClick={backSlide}
@@ -597,18 +599,16 @@ function index(props) {
               
               <Image
                 src={displayedSlide}
-                width={260}
+                width={290}
                 height={260}
                 className="rounded-2xl"
               />
             </div>
           </div>
           <div 
-          style={{
-            width:"230px" 
-          }}  
+            
           className=" row-span-1 col-span-1 ">
-            <div className="relative p-4 col-span-1 row-span-1 w-full h-full blurryBg drop-shadow-xl rounded-2xl">
+            <div className="relative p-4 col-span-1 row-span-1 w-72 h-64 blurryBg drop-shadow-xl rounded-2xl">
               <p className="text-3xl font-semibold bg-gradient-to-r from-black to-slate-500 text-transparent bg-clip-text">
                 Hobbies
               </p>
@@ -655,7 +655,7 @@ function index(props) {
               </button>
             </div>
           </div>
-          <div className="row-span-1 col-span-2 blurryBg rounded-2xl p-3 pl-6">
+          <div className=" auto-rows-min auto-cols-min blurryBg w-72 rounded-2xl p-3 pl-6">
             <p className="mb-2 flex w-full justify-center text-3xl font-semibold bg-gradient-to-r from-black to-slate-500 text-transparent bg-clip-text">
                 {" "}
                 Skills{" "}
@@ -718,15 +718,13 @@ function index(props) {
           
           
           <div 
-          style={{
-            width:"497px !important" 
-          }}
-          className=" row-span-2 col-span-2 ">
+          
+          className="justify-self-center row-span-2 col-span-2 ">
             <div
             style={{
               height: "465px",
     overflowY: "scroll"}}
-            className="customScroll relative p-4 col-span-1 row-span-1 w-full h-full blurryBg drop-shadow-xl rounded-2xl">
+            className="customScroll relative p-4 col-span-1 row-span-1 w-72 h-full blurryBg drop-shadow-xl rounded-2xl">
             <p className="pb-4 text-3xl font-semibold bg-gradient-to-r from-black to-slate-500 text-transparent bg-clip-text">
               Experience
             </p> 

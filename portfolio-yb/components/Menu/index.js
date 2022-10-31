@@ -81,18 +81,18 @@ function index(props) {
             
             <div
             
-            className="backdrop-blur-md blurryBg  drop-shadow-xl  flex justify-around w-11/12 h-12  rounded-full">
-            <button className="mr-1 transition ease-in delay-100 bg-transparent w-32 text-black font-medium  hover:scale-105 transition ease-in hover:text-black active:bg-slate-200 border-none outline-none active:text-black  focus:bg-white focus:border-none focus:outline-none focus:text-black opacity-100 rounded-full"
+            className="backdrop-blur-md blurryBg  drop-shadow-xl  flex justify-around w-80 h-12  rounded-full">
+            <button className="mr-1  delay-100 bg-transparent w-32 text-black font-medium  hover:scale-105 transition ease-in hover:text-black active:bg-slate-200 border-none outline-none active:text-black  focus:bg-white focus:border-none focus:outline-none focus:text-black opacity-100 rounded-full"
             onClick={()=>{
               props.updateNavigate('about')
             }}
             >About</button>
-            <button className="mr-1 transition ease-in delay-100 bg-transparent w-32 text-black font-medium hover:scale-105 transition ease-in hover:text-black active:bg-slate-200 border-none outline-none active:text-black focus:bg-white focus:border-none focus:outline-none focus:text-black opacity-100 rounded-full"
+            <button className="mr-1  delay-100 bg-transparent w-32 text-black font-medium hover:scale-105 transition ease-in hover:text-black active:bg-slate-200 border-none outline-none active:text-black focus:bg-white focus:border-none focus:outline-none focus:text-black opacity-100 rounded-full"
             onClick={()=>{
               props.updateNavigate('projects')
             }}
             >Projects</button>
-            <button className="mr-1 transition ease-in delay-100 bg-transparent w-32 text-black font-medium hover:scale-105 transition ease-in hover:text-black active:bg-slate-200 border-none outline-none active:text-black focus:bg-white focus:border-none focus:outline-none focus:text-black opacity-100 rounded-full"
+            <button className="mr-1 delay-100 bg-transparent w-32 text-black font-medium hover:scale-105 transition ease-in hover:text-black active:bg-slate-200 border-none outline-none active:text-black focus:bg-white focus:border-none focus:outline-none focus:text-black opacity-100 rounded-full"
             onClick={()=>{
               props.updateNavigate('resume')
             }}
