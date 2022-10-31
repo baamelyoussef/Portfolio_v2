@@ -9,7 +9,7 @@ function index(props) {
 
   return (
     <>
-    <div className='max-lg:hidden flex items-center justify-center pt-5 '>
+    <div className=' max-lg:hidden flex items-center justify-center pt-5 '>
             
             <div
             

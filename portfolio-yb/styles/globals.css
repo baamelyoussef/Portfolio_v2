@@ -72,8 +72,8 @@ img {
 	/* background: linear-gradient(-45deg, #47a7c2, #228fe3, #47bfe0, #3192e7); */
 	background: repeating-linear-gradient(
     45deg,
-    #039ae575 0px,
-    #039ae56f 20px,
+    #039ae5de 0px,
+    #039ae5ba 20px,
     #90caf975 20px,
     #90caf96f 40px
   );
@@ -83,9 +83,7 @@ img {
   margin: 0 !important;
 background-size: cover;
 }
-html{
 
-}
 
 @keyframes gradient {
 	0% {
@@ -97,4 +95,10 @@ html{
 	100% {
 		background-position: 0% 50%;
 	}
+}
+
+@media only screen and (min-width: 1024px) {
+  html ,body {
+    height: 110vh !important;
+  }
 }

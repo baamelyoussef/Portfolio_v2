@@ -86,7 +86,7 @@ function index(props) {
         <>
         <div 
         
-        className="max-lg:hidden  pt-6 p-4 grid place-content-center grid-cols-auto-fit grid-row-auto-fit auto-rows-max auto-cols-max grid-flow-rows grid-flow-col w-full h-full gap-3">
+        className=" max-lg:hidden  pt-6 p-4 grid place-content-center grid-cols-auto-fit grid-row-auto-fit auto-rows-max auto-cols-max grid-flow-rows grid-flow-col w-full h-full gap-3">
           <div className="p-4 row-span-2 col-span-2 w-full blurryBg  drop-shadow-xl rounded-2xl dark:bg-slate-700">
             <Image
               src={meMoji}
