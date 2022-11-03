@@ -43,7 +43,7 @@ import pic2 from "../../assets/img/pic2.jpg";
 import pic3 from "../../assets/img/pic3.jpg";
 import pic4 from "../../assets/img/pic4.jpg";
 import { useState, useEffect } from "react";
-function index(props) {
+function Container(props) {
   const [imageSlides, setImageSlides] = useState([
     beachPic,
     pic1,
@@ -101,7 +101,7 @@ function index(props) {
               <span className="bg-gradient-to-r from-black to-slate-500 text-transparent bg-clip-text">
                 Youssef Baamel
               </span>{" "}
-              & I\'m a
+              & I&apos;m a
             </h3>
             <h1 className="text-4xl bg-gradient-to-r from-black to-slate-500 text-transparent bg-clip-text">
               <b>Front End Engineer</b>
@@ -299,7 +299,7 @@ function index(props) {
         <time className="mb-1 mt-0 text-base font-medium leading-none text-slate-700 dark:text-gray-500">Mars 2022 - Now</time>
         <h3 className="text-lg font-semibold text-gray-900 dark:text-slate-700">Front End Engineer</h3>
         <time className="mb-1 mt-0 text-base font-medium leading-none text-slate-800 dark:text-gray-500">Algo Consulting Group</time>
-        <p className="mb-4 text-base font-medium text-slate-700 dark:text-gray-400">I worked as an IT Consultant for algo consulting group building web solutions (e-commerce platform for train ticket shopping) for huge clients like ONCF which is Morocco's national railway operator and that was a big milestone for me</p>
+        <p className="mb-4 text-base font-medium text-slate-700 dark:text-gray-400">I worked as an IT Consultant for algo consulting group building web solutions (e-commerce platform for train ticket shopping) for huge clients like ONCF which is Morocco&apos;s national railway operator and that was a big milestone for me</p>
     </li>
 </ol>
 
@@ -333,7 +333,7 @@ function index(props) {
               <span className="bg-gradient-to-r from-black to-slate-500 text-transparent bg-clip-text">
                 Youssef Baamel
               </span>{" "}
-              & I'm a
+              & I&apos;m a
             </h3>
             <h1 className="text-4xl bg-gradient-to-r from-black to-slate-500 text-transparent bg-clip-text">
               <b>Front End Engineer</b>
@@ -566,7 +566,7 @@ function index(props) {
               <span className="bg-gradient-to-r from-black to-slate-500 text-transparent bg-clip-text">
                 Youssef Baamel
               </span>{" "}
-              & I'm a
+              & I&apos;m a
             </h3>
             <h1 className="text-4xl bg-gradient-to-r from-black to-slate-500 text-transparent bg-clip-text">
               <b>Front End Engineer</b>
@@ -1212,4 +1212,4 @@ function index(props) {
   );
 }
 
-export default index;
+export default Container;

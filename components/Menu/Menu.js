@@ -3,7 +3,7 @@ import Image from "next/image";
 import darkModePng from "../../assets/img/darkmode.png";
 import lightModePng from "../../assets/img/lightmode.png";
 
-function index(props) {
+function Menu(props) {
   return (
     <>
       <div className=" max-lg:hidden flex items-center justify-center pt-5 ">
@@ -99,4 +99,4 @@ function index(props) {
   );
 }
 
-export default index;
+export default Menu;
