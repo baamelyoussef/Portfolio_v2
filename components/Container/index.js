@@ -6,6 +6,7 @@ import githubIcon from "../../assets/img/githubIcon.png";
 import linkedinIcon from "../../assets/img/linkedinIcon.png";
 import instagramIcon from "../../assets/img/instagramIcon.png";
 import firebase from "../../assets/img/firebase.png";
+import nikeEcom from "../../assets/img/nikeEcom.png";
 import meMoji from "../../assets/img/memoji.png";
 import np from "../../assets/img/np.png";
 import horseRiding from "../../assets/img/horseRiding.png";
@@ -22,6 +23,7 @@ import githubblack from "../../assets/img/githubblack.png";
 import npm from "../../assets/img/npm.png";
 import c from "../../assets/img/c.svg";
 import webpack from "../../assets/img/webpack.png";
+import outmailer from "../../assets/img/outmailerScreen.PNG"
 import tailwind from "../../assets/img/tailwind.png";
 import docker from "../../assets/img/docker.png";
 import express from "../../assets/img/express.png";
@@ -99,7 +101,7 @@ function index(props) {
               <span className="bg-gradient-to-r from-black to-slate-500 text-transparent bg-clip-text">
                 Youssef Baamel
               </span>{" "}
-              & I'm a
+              & I\'m a
             </h3>
             <h1 className="text-4xl bg-gradient-to-r from-black to-slate-500 text-transparent bg-clip-text">
               <b>Front End Engineer</b>
@@ -271,27 +273,33 @@ function index(props) {
 <ol className="relative border-l border-slate-700 dark:border-gray-200">                  
     <li className="mb-10 ml-4">
         <div className="absolute w-3 h-3  rounded-full mt-1.5 -left-1.5 border border-white   bg-gray-700 dark:border-gray-900 dark:bg-gray-200"></div>
-        <time className="mb-1 mt-0 text-base font-medium leading-none text-slate-700 dark:text-gray-500">February 2022</time>
-        <h3 className="text-lg font-semibold text-gray-900 dark:text-slate-700">Application UI code in Tailwind CSS</h3>
-        <p className="mb-4 text-base font-medium text-slate-700 dark:text-gray-400">Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce &amp; Marketing pages.</p>
+        <time className="mb-1 mt-0 text-base font-medium leading-none text-slate-700 dark:text-gray-500">December 2018 - January 2020</time>
+        <h3 className="text-lg font-semibold text-gray-900 dark:text-slate-700">Front End Developer</h3>
+        <time className="mb-1 mt-0 text-base font-medium leading-none text-slate-800 dark:text-gray-500">Freelance</time>
+        <p className="mb-4 text-base font-medium text-slate-700 dark:text-gray-400">From working with clients from my local network to serving big SaaS companies and agencies worldwide with my skillset</p>
     </li>
     <li className="mb-10 ml-4">
     <div className="absolute w-3 h-3  rounded-full mt-1.5 -left-1.5 border border-white   bg-gray-700 dark:border-gray-900 dark:bg-gray-200"></div>
-        <time className="mb-1 mt-0 text-base font-medium leading-none text-slate-700 dark:text-gray-500">February 2022</time>
-        <h3 className="text-lg font-semibold text-gray-900 dark:text-slate-700">Application UI code in Tailwind CSS</h3>
-        <p className="mb-4 text-base font-medium text-slate-700 dark:text-gray-400">Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce &amp; Marketing pages.</p>
+        <time className="mb-1 mt-0 text-base font-medium leading-none text-slate-700 dark:text-gray-500">January 2020 - April 2021</time>
+        <h3 className="text-lg font-semibold text-gray-900 dark:text-slate-700">Front End Developer</h3>
+        <time className="mb-1 mt-0 text-base font-medium leading-none text-slate-800 dark:text-gray-500">Hei-Tech Graphic</time>
+        <p className="mb-4 text-base font-medium text-slate-700 dark:text-gray-400"> 
+	Maintained complex technology infrastructure and collaborated with product team to implement new features and strategically plan with test driven development for future products.
+</p>
     </li>
     <li className="mb-10 ml-4">
     <div className="absolute w-3 h-3  rounded-full mt-1.5 -left-1.5 border border-white   bg-gray-700 dark:border-gray-900 dark:bg-gray-200"></div>
-        <time className="mb-1 mt-0 text-base font-medium leading-none text-slate-700 dark:text-gray-500">February 2022</time>
-        <h3 className="text-lg font-semibold text-gray-900 dark:text-slate-700">Application UI code in Tailwind CSS</h3>
-        <p className="mb-4 text-base font-medium text-slate-700 dark:text-gray-400">Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce &amp; Marketing pages.</p>
+        <time className="mb-1 mt-0 text-base font-medium leading-none text-slate-700 dark:text-gray-500">April 2021 - February 2022</time>
+        <h3 className="text-lg font-semibold text-gray-900 dark:text-slate-700">Front End Developer</h3>
+        <time className="mb-1 mt-0 text-base font-medium leading-none text-slate-800 dark:text-gray-500">Oky Solutions</time>
+        <p className="mb-4 text-base font-medium text-slate-700 dark:text-gray-400">Designed and developed efficient and maintainable software that automates the generation of newsletters sent to clients according to business objectives and needs of various clients. </p>
     </li>
     <li className="ml-4">
     <div className="absolute w-3 h-3  rounded-full mt-1.5 -left-1.5 border border-white   bg-gray-700 dark:border-gray-900 dark:bg-gray-200"></div>
-        <time className="mb-1 mt-0 text-base font-medium leading-none text-slate-700 dark:text-gray-500">February 2022</time>
-        <h3 className="text-lg font-semibold text-gray-900 dark:text-slate-700">Application UI code in Tailwind CSS</h3>
-        <p className="mb-4 text-base font-medium text-slate-700 dark:text-gray-400">Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce &amp; Marketing pages.</p>
+        <time className="mb-1 mt-0 text-base font-medium leading-none text-slate-700 dark:text-gray-500">Mars 2022 - Now</time>
+        <h3 className="text-lg font-semibold text-gray-900 dark:text-slate-700">Front End Engineer</h3>
+        <time className="mb-1 mt-0 text-base font-medium leading-none text-slate-800 dark:text-gray-500">Algo Consulting Group</time>
+        <p className="mb-4 text-base font-medium text-slate-700 dark:text-gray-400">I worked as an IT Consultant for algo consulting group building web solutions (e-commerce platform for train ticket shopping) for huge clients like ONCF which is Morocco's national railway operator and that was a big milestone for me</p>
     </li>
 </ol>
 
@@ -775,15 +783,21 @@ function index(props) {
       )}
       {props.navigate == "projects" && (
         <>
-          <div className=" container pt-6 p-4 grid place-content-center grid-cols-auto-fit grid-row-auto-fit auto-rows-max auto-cols-max grid-flow-rows grid-flow-col w-full gap-3">
+          <div
+            style={{
+                width: "100%",
+  height: "100%",
+  overflowY: "hidden",
+  overflowX: "auto",
+            }}
+          className="customScroll container pt-6 p-4 flex  grid-cols-auto-fit grid-row-auto-fit auto-rows-max auto-cols-max grid-flow-rows grid-flow-col w-full gap-3">
             <div 
-            
-            className="row-span-2 blurryBg  w-full rounded-2xl">
-              <div className="p-4">
+            className=" row-span-2 blurryBg  w-full rounded-2xl">
+              <div className="maxCW p-4">
                 <div className="pb-3">
                   <p className=" text-xl text-slate-700">Project</p>
                   <p className=" text-2xl font-semibold bg-gradient-to-r from-black to-slate-400 text-transparent bg-clip-text">
-                    Hulu Clone
+                    Movie Trends <br/>(Hulu Clone)
                   </p>
                 </div>
                 <p className=" text-xl text-slate-700 mb-1">
@@ -798,19 +812,23 @@ function index(props) {
                 <div className="mt-3">
                   <Image
                     src={huluclone}
-                    width={250}
+                    width={280}
                     height={200}
                     className="rounded-2xl"
                   />
                 </div>
                 <div className="mt-2">
-                  <button className="bg-black hover:scale-105 transition ease-in w-full flex shadow-lg justify-center  p-1 rounded-full">
+                  <button 
+                  onClick={()=>{window.open("https://hulu-clone-seven-eta.vercel.app/", "_blank");}}
+                  className="bg-black hover:scale-105 transition ease-in w-full flex shadow-lg justify-center  p-1 rounded-full">
                     <p className="text-lg text-white bg-black">View Project</p>
                     <div className="ml-2 mt-1">
                       <Image src={external} width={21} height={21} />
                     </div>
                   </button>
-                  <button className="bg-black mt-2 hover:scale-105 transition ease-in w-full flex justify-center shadow-lg p-1 rounded-full">
+                  <button 
+                  onClick={()=>{window.open("https://github.com/baamelyoussef/Hulu-clone", "_blank");}}
+                  className="bg-black mt-2 hover:scale-105 transition ease-in w-full flex justify-center shadow-lg p-1 rounded-full">
                     <p className="text-lg text-white bg-black">Check on Github</p>
                     <div className="ml-2 mt-1">
                       <Image src={githubIcon} width={17} height={17} />
@@ -819,114 +837,55 @@ function index(props) {
                 </div>
               </div>
             </div>
-            <div className="row-span-1 col-span-1   blurryBg w-full rounded-2xl">
-              <div className="p-4 flex">
-                
-                <div className="pb-3 mr-5"
-                  style={{
-                    width:"200px !important"
-                  }}>
-                    
+            <div 
+            className=" row-span-2 blurryBg  w-full rounded-2xl">
+              <div className="maxCW p-4">
+                <div className="pb-3">
                   <p className=" text-xl text-slate-700">Project</p>
-                  <p className=" text-2xl mr-2 font-semibold bg-gradient-to-r from-black to-slate-700 text-transparent bg-clip-text">
+                  <p className=" text-2xl font-semibold bg-gradient-to-r from-black to-slate-400 text-transparent bg-clip-text">
                   Organization <br></br> Funding  App
                   </p>
-                  <p className=" text-xl text-slate-700 mb-1">
+                </div>
+                <p className=" text-xl text-slate-700 mb-1">
                   Technologies used
                 </p>
                 <div className="flex justify-evenly">
-                  <Image src={javascriptOrigine} width={30} height={30} />
+                <Image src={javascriptOrigine} width={30} height={30} />
                   {/* <Image src={vuetify} width={30} height={30} /> */}
                   <Image src={vuejs} width={30} height={30} />
                   <Image src={tailwind} width={30} height={30} />
                 </div>
-                  <div className="mt-4">
-                  <button className="bg-black hover:scale-105 transition ease-in w-full flex shadow-lg justify-center  px-8 py-1 rounded-full">
+                <div className="mt-3">
+                  <Image
+                    src={np}
+                    width={280}
+                    height={200}
+                    className="rounded-2xl"
+                  />
+                </div><div className="mt-2">
+                  
+                  <button 
+                  onClick={()=>{window.open("https://npoproject.netlify.app/", "_blank");}}
+                  className="bg-black hover:scale-105 transition ease-in w-full flex shadow-lg justify-center  p-1 rounded-full">
                     <p className="text-lg text-white bg-black">View Project</p>
                     <div className="ml-2 mt-1">
                       <Image src={external} width={21} height={21} />
                     </div>
                   </button>
-                  <button className="bg-black mt-2 hover:scale-105 transition ease-in w-full flex justify-center shadow-lg px-8 py-1 rounded-full">
+                  <button 
+                  onClick={()=>{window.open("https://github.com/baamelyoussef/NPO-vue", "_blank");}}
+                  className="bg-black mt-2 hover:scale-105 transition ease-in w-full flex justify-center shadow-lg p-1 rounded-full">
                     <p className="text-lg text-white bg-black">Check on Github</p>
                     <div className="ml-2 mt-1">
                       <Image src={githubIcon} width={17} height={17} />
                     </div>
                   </button>
                 </div>
-                </div>
-                
-                <div>
-                  
-                <div className="mt-3">
-                  <Image
-                    src={np}
-                    width={220}
-                    height={220}
-                    className="rounded-2xl"
-                  />
-                </div>
-                </div>
-                
-                
                 
               </div>
-            </div>
-            {/* <div className="row-span-1 col-span-1   blurryBg w-full rounded-2xl">
-              <div className="p-4 flex">
-                
-                <div className="pb-3 mr-5"
-                  style={{
-                    width:"200px !important"
-                  }}>
-                    
-                  <p className=" text-xl text-slate-700">Project</p>
-                  <p className=" text-2xl mr-2 font-semibold bg-gradient-to-r from-black to-slate-700 text-transparent bg-clip-text">
-                  Organization <br></br> Funding  App
-                  </p>
-                  <p className=" text-xl text-slate-700 mb-1">
-                  Technologies used
-                </p>
-                <div className="flex justify-evenly">
-                  <Image src={javascriptOrigine} width={30} height={30} />
-                  <Image src={vuejs} width={30} height={30} />
-                  <Image src={tailwind} width={30} height={30} />
-                </div>
-                  <div className="mt-4">
-                  <button className="bg-black hover:scale-105 transition ease-in w-full flex shadow-lg justify-center  px-8 py-1 rounded-full">
-                    <p className="text-lg text-white bg-black">View Project</p>
-                    <div className="ml-2 mt-1">
-                      <Image src={external} width={21} height={21} />
-                    </div>
-                  </button>
-                  <button className="bg-black mt-2 hover:scale-105 transition ease-in w-full flex justify-center shadow-lg px-8 py-1 rounded-full">
-                    <p className="text-lg text-white bg-black">Check on Github</p>
-                    <div className="ml-2 mt-1">
-                      <Image src={githubIcon} width={17} height={17} />
-                    </div>
-                  </button>
-                </div>
-                </div>
-                
-                <div>
-                  
-                <div className="mt-3">
-                  <Image
-                    src={np}
-                    width={220}
-                    height={220}
-                    className="rounded-2xl"
-                  />
-                </div>
-                </div>
-                
-                
-                
-              </div>
-            </div> */}
-            
-            <div className="row-span-2  blurryBg w-full rounded-2xl">
-              <div className="p-4">
+            </div>           
+            <div className=" row-span-2  blurryBg w-full rounded-2xl">
+              <div className="maxCW p-4">
                 <div className="pb-3 "
                   style={{
                     width:"200px !important"
@@ -948,19 +907,121 @@ function index(props) {
                 <div className="mt-3">
                   <Image
                     src={okynewsletter}
-                    width={300}
+                    width={280}
                     height={200}
                     className="rounded-2xl"
                   />
                 </div>
                 <div className="mt-2">
-                  <button className="bg-black hover:scale-105 transition ease-in w-full flex shadow-lg justify-center  p-1 rounded-full">
+                  <button 
+                  onClick={()=>{window.open("https://www.okynewslettersdemo.000webhostapp.com", "_blank");}}
+
+                  className="bg-black hover:scale-105 transition ease-in w-full flex shadow-lg justify-center  p-1 rounded-full">
                     <p className="text-lg text-white bg-black">View Project</p>
                     <div className="ml-2 mt-1">
                       <Image src={external} width={21} height={21} />
                     </div>
                   </button>
-                  <button className="bg-black mt-2 hover:scale-105 transition ease-in w-full flex justify-center shadow-lg p-1 rounded-full">
+                  <button 
+                  onClick={()=>{window.open("https://github.com/baamelyoussef/OkyNewsletters", "_blank");}}
+                  className="bg-black mt-2 hover:scale-105 transition ease-in w-full flex justify-center shadow-lg p-1 rounded-full">
+                    <p className="text-lg text-white bg-black">Check on Github</p>
+                    <div className="ml-2 mt-1">
+                      <Image src={githubIcon} width={17} height={17} />
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div className=" row-span-2  blurryBg w-full rounded-2xl">
+              <div className="maxCW p-4">
+                <div className="pb-3 "
+                  style={{
+                    width:"200px !important"
+                  }}>
+                  <p className=" text-xl text-slate-700">Project</p>
+                  <p className=" text-2xl font-semibold bg-gradient-to-r from-black to-slate-700 text-transparent bg-clip-text">
+                  Outmailer : Detect spam<br></br> & faulsy emails
+                  </p>
+                </div>
+                <p className=" text-xl text-slate-700 mb-1">
+                  Technologies used
+                </p>
+                <div className="flex justify-evenly">
+                  <Image src={javascriptOrigine} width={30} height={30} />
+                  {/* <Image src={vuetify} width={30} height={30} /> */}
+                  <Image src={nextjs} width={30} height={30} />
+                  <Image src={react} width={30} height={30} />
+                  <Image src={typescript} width={30} height={30} />
+                </div>
+                <div className="mt-3">
+                  <Image
+                    src={outmailer}
+                    width={280}
+                    height={200}
+                    className="rounded-2xl"
+                  />
+                </div>
+                <div className="mt-2">
+                  <button
+                  onClick={()=>{window.open("https://outmailer.vercel.app/home", "_blank");}}
+                  className="bg-black hover:scale-105 transition ease-in w-full flex shadow-lg justify-center  p-1 rounded-full">
+                    <p className="text-lg text-white bg-black">View Project</p>
+                    <div className="ml-2 mt-1">
+                      <Image src={external} width={21} height={21} />
+                    </div>
+                  </button>
+                  <button 
+                                      onClick={()=>{window.open("https://github.com/baamelyoussef/Outmailer", "_blank");}}
+                  className="bg-black mt-2 hover:scale-105 transition ease-in w-full flex justify-center shadow-lg p-1 rounded-full">
+                    <p className="text-lg text-white bg-black">Check on Github</p>
+                    <div className="ml-2 mt-1">
+                      <Image src={githubIcon} width={17} height={17} />
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div className=" row-span-2  blurryBg w-full rounded-2xl">
+              <div className="maxCW p-4">
+                <div className="pb-3 "
+                  style={{
+                    width:"200px !important"
+                  }}>
+                  <p className=" text-xl text-slate-700">Project</p>
+                  <p className=" text-2xl font-semibold bg-gradient-to-r from-black to-slate-700 text-transparent bg-clip-text">
+                  Sneakers eCommerce <br></br>store (Nike Inspired)
+                  </p>
+                </div>
+                <p className=" text-xl text-slate-700 mb-1">
+                  Technologies used
+                </p>
+                <div className="flex justify-evenly">
+                  <Image src={javascriptOrigine} width={30} height={30} />
+                  <Image src={typescript} width={30} height={30} />
+                  <Image src={react} width={30} height={30} />
+                  <Image src={tailwind} width={30} height={30} />
+                </div>
+                <div className="mt-3">
+                  <Image
+                    src={nikeEcom}
+                    width={280}
+                    height={200}
+                    className="rounded-2xl"
+                  />
+                </div>
+                <div className="mt-2">
+                  <button 
+                  onClick={()=>{window.open("https://ecomestore-nikeinspired.vercel.app/", "_blank");}}
+                  className="bg-black hover:scale-105 transition ease-in w-full flex shadow-lg justify-center  p-1 rounded-full">
+                    <p className="text-lg text-white bg-black">View Project</p>
+                    <div className="ml-2 mt-1">
+                      <Image src={external} width={21} height={21} />
+                    </div>
+                  </button>
+                  <button 
+                  onClick={()=>{window.open("https://github.com/baamelyoussef/ecomestore_nikeinspired", "_blank");}}
+                  className="bg-black mt-2 hover:scale-105 transition ease-in w-full flex justify-center shadow-lg p-1 rounded-full">
                     <p className="text-lg text-white bg-black">Check on Github</p>
                     <div className="ml-2 mt-1">
                       <Image src={githubIcon} width={17} height={17} />
@@ -975,7 +1036,7 @@ function index(props) {
       )}
       {props.navigate == "media" && (
         <>
-          <div className=" pt-6 p-4 grid place-content-center grid-cols-auto-fit grid-row-auto-fit auto-rows-max auto-cols-max grid-flow-rows grid-flow-col w-full h-full gap-3">
+          <div className="max-sm:hidden pt-6 p-4 grid place-content-center grid-cols-auto-fit grid-row-auto-fit auto-rows-max auto-cols-max grid-flow-rows grid-flow-col w-full h-full gap-3">
             <div className="col-span-1 row-span-2 p-4 bg-black drop-shadow-xl rounded-2xl w-60 h-full">
               <button className="relative flex justify-center items-center bg-transparent w-full h-full">
                 <Image
@@ -989,6 +1050,93 @@ function index(props) {
                     window.open("https://github.com/baamelyoussef", "_blank")
                   }
                   className="pt-1 pl-1 transition ease-in delay-100 hover:ring-2 ring-transparent ring-offset-4 ring-offset-white absolute z-40  bg-transparent w-10 rounded-full bottom-1 right-1"
+                >
+                  <Image
+                    src={arrowRight}
+                    width={30}
+                    height={30}
+                    className=" rounded-2xl"
+                  />
+                </button>
+              </button>
+            </div>
+            <div className="col-span-1 row-span-1 w-64 h-64 bg-blue-500 drop-shadow-xl rounded-2xl">
+              <button className="relative flex justify-center items-center bg-transparent w-full h-full">
+                <Image
+                  src={linkedinIcon}
+                  width={80}
+                  height={80}
+                  className=" rounded-2xl"
+                />
+                <button
+                  onClick={() =>
+                    window.open(
+                      "https://www.linkedin.com/in/imyoussefbaamel/",
+                      "_blank"
+                    )
+                  }
+                  className="pt-1 pl-1 transition ease-in delay-100 hover:ring-2 ring-transparent ring-offset-4 ring-offset-white absolute z-40  bg-transparent w-10 rounded-full bottom-3 right-3"
+                >
+                  <Image
+                    src={arrowRight}
+                    width={30}
+                    height={30}
+                    className=" rounded-2xl"
+                  />
+                </button>
+              </button>
+            </div>
+            <div
+              className="col-span-1 row-span-1 w-64 h-64 drop-shadow-xl rounded-2xl"
+              style={{
+                background:
+                  "radial-gradient( circle farthest-corner at 35% 90%, #fec564, transparent 50% ), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient( ellipse farthest-corner at 20% -50%, #5258cf, transparent 50% ), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient( ellipse farthest-corner at 60% -20%, #893dc2, transparent 50% ), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient( #6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100% )",
+              }}
+            >
+              <button className="relative flex justify-center items-center bg-transparent w-full h-full">
+                <Image
+                  src={instagramIcon}
+                  width={100}
+                  height={100}
+                  className=" rounded-2xl"
+                />
+                <button
+                  onClick={() =>
+                    window.open(
+                      "https://www.instagram.com/baamel.youssef/",
+                      "_blank"
+                    )
+                  }
+                  className="pt-1 pl-1 transition ease-in delay-100 hover:ring-2 ring-transparent ring-offset-4 ring-offset-white absolute z-40  bg-transparent w-10 rounded-full bottom-3 right-3"
+                >
+                  <Image
+                    src={arrowRight}
+                    width={30}
+                    height={30}
+                    className=" rounded-2xl"
+                  />
+                </button>
+              </button>
+            </div>
+          </div>
+          <div className="sm:hidden pt-6 p-4 flex flex-col  items-center w-full h-full gap-3">
+            
+            <div className="col-span-1 row-span-1 w-64 h-64 bg-black drop-shadow-xl rounded-2xl">
+              <button className="relative flex justify-center items-center bg-transparent w-full h-full">
+                <Image
+                  src={githubIcon}
+                  width={80}
+                  height={80}
+                  className=" rounded-2xl"
+                />
+                <button
+                  onClick={() =>
+                    window.open(
+                      "https://github.com/baamelyoussef",
+                      "_blank"
+                    )
+                  }
+                  className="pt-1 pl-1 transition ease-in delay-100 hover:ring-2 ring-transparent ring-offset-4 ring-offset-white absolute z-40  bg-transparent w-10 rounded-full bottom-3 right-3"
                 >
                   <Image
                     src={arrowRight}
