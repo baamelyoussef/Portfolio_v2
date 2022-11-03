@@ -6,7 +6,7 @@ import githubIcon from "../../assets/img/githubIcon.png";
 import linkedinIcon from "../../assets/img/linkedinIcon.png";
 import instagramIcon from "../../assets/img/instagramIcon.png";
 import firebase from "../../assets/img/firebase.png";
-import nikeEcom from "../../assets/img/nikeEcom.png";
+import nikeEcom from "../../assets/img/nikeEcom.PNG";
 import meMoji from "../../assets/img/memoji.png";
 import np from "../../assets/img/np.png";
 import horseRiding from "../../assets/img/horseRiding.png";
