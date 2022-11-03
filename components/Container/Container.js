@@ -299,7 +299,7 @@ function Container(props) {
         <time className="mb-1 mt-0 text-base font-medium leading-none text-slate-700 dark:text-gray-500">Mars 2022 - Now</time>
         <h3 className="text-lg font-semibold text-gray-900 dark:text-slate-700">Front End Engineer</h3>
         <time className="mb-1 mt-0 text-base font-medium leading-none text-slate-800 dark:text-gray-500">Algo Consulting Group</time>
-        <p className="mb-4 text-base font-medium text-slate-700 dark:text-gray-400">I worked as an IT Consultant for algo consulting group building web solutions (e-commerce platform for train ticket shopping) for huge clients like ONCF which is Morocco&apos;s national railway operator and that was a big milestone for me</p>
+        <p className="mb-4 text-base font-medium text-slate-700 dark:text-gray-400">I worked as a font end engineer and consultant for algo consulting group building web solutions (e-commerce platform for train ticket shopping) for huge clients like ONCF which is Morocco&apos;s national railway operator and that was a big milestone for me</p>
     </li>
 </ol>
 
