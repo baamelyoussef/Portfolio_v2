@@ -12,6 +12,9 @@ export default function Home() {
   };
   return (
     <div className="container mx-auto dark:text-white">
+      <Head>
+        <title>Baamel Youssef</title>
+      </Head>
       {/* https://i.ibb.co/ZKgw6F1/300005468-3273608989562034-817290961671024273-n.jpg */}
       <Menu updateNavigate={updateNavigate} />
       <Container navigate={Navigate} />
